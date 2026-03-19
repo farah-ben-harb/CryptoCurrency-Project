@@ -121,10 +121,7 @@ jupyter notebook
 
 ---
 
-## Author
 
-Farah Ben Harb  
-Computer Engineering Student – ESPRIT  
 
 ---
 
