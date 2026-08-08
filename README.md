@@ -1,131 +1,46 @@
-# Cryptocurrency Market Analysis & Prediction (Machine Learning)
+# Cryptocurrency Market Analysis and Prediction
 
-## Project Overview
-This project focuses on analyzing and predicting cryptocurrency market behavior using Machine Learning techniques.
+Machine learning notebook project for analyzing and predicting cryptocurrency market behavior.
 
-It aims to support investment decision-making, risk management, and market understanding through data-driven insights.
+## Overview
 
----
+The goal is to support investment understanding, risk awareness, and exploratory market analysis through a reproducible data science workflow.
 
-## Business Objectives
+## Objectives
 
-### BO1: Optimize Investment Strategy
+- predict future price behavior from historical data
+- classify short-term price movement direction
+- compare model performance across different approaches
 
-#### DSO1 – Regression
-Predict the future price of a cryptocurrency based on historical data.
+## Tech Stack
 
-- Target (quantitative): price_usd  
-- Features: price_usd, chg_24h, chg_7d, vol_24h, market_cap  
+- Python
+- Jupyter Notebook
+- Machine learning libraries used in the notebook
+- CSV market data
 
-#### DSO2 – Classification
-Predict whether the price will go up or down in the next timestamp.
+## Repository Structure
 
-- Target (qualitative):
-  - chg_24h > 0 → Increase  
-  - chg_24h <= 0 → Decrease  
+- `cryptoprojet.ipynb` analysis notebook
+- `cryptocurrency.csv` market dataset
 
----
+## Workflow
 
-### BO2: Portfolio Diversification
+1. load and inspect the dataset
+2. clean and prepare features
+3. train regression or classification models
+4. evaluate predictions
+5. compare results and limitations
 
-#### DSO3 – Clustering
-Group cryptocurrencies based on market behavior.
+## Branching and Commits
 
-- Features: price_usd, vol_24h, chg_24h, chg_7d, market_cap  
-- Methods:
-  - K-Means  
-  - Hierarchical Clustering  
+- Use branches such as `feat/<area>`, `fix/<area>`, `docs/<area>`, or `data/<area>`
+- Keep commits focused on one notebook or data change
+- Prefer Conventional Commits such as `chore(data): update preprocessing notes`
+- Avoid vague messages like `final`, `update`, or `test`
 
----
+## Contributing
 
-### BO3: Market Understanding & Correlation Analysis
-
-#### DSO4 – Exploratory Data Analysis (EDA)
-
-- Analyze relationships between variables:
-  - market_cap vs price_usd  
-  - vol_24h vs chg_24h  
-- Identify dominant cryptocurrencies in the market  
-
-- Methods:
-  - Scatter plots  
-  - Correlation heatmaps  
-
----
-
-### BO4: Risk Management & Portfolio Optimization
-
-#### DSO5 – Quantitative Risk Analysis
-
-- Estimate volatility of each cryptocurrency  
-- Identify high-risk vs low-risk assets  
-
-- Methods:
-  - Standard deviation  
-  - Min/Max analysis  
-  - Moving averages  
-
----
-
-## Technologies Used
-
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Matplotlib  
-- Seaborn  
-- Jupyter Notebook  
-
----
-
-## Project Structure
-
-data/         → datasets  
-notebooks/    → experiments and analysis  
-src/          → machine learning pipeline  
-models/       → trained models  
-results/      → visualizations and metrics  
-
----
-
-## How to Run
-
-1. Install dependencies:
-pip install -r requirements.txt
-
-2. Run the project:
-python main.py
-
-3. Open notebooks:
-jupyter notebook
-
----
-
-## Key Outcomes
-
-- Price prediction model (regression)  
-- Trend classification model (up/down)  
-- Cryptocurrency clustering  
-- Market insights through exploratory analysis  
-- Risk evaluation metrics  
-
----
-
-## Use Cases
-
-- Investment decision support  
-- Portfolio diversification  
-- Risk analysis in crypto markets  
-- Financial data analysis  
-
----
-
-
-
----
-
-## Notes
-
-- Dataset includes historical cryptocurrency data  
-- Visualizations available in the results folder  
+- Keep notebook outputs readable
+- Document assumptions around features and targets
+- Avoid committing large generated artifacts unless they are necessary for the project
